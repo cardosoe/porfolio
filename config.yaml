@@ -103,7 +103,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "https://drive.google.com/file/d/1vsp6Xdde_CA3lMeFzp9FcEEP93M95Fff/view?usp=sharing" 
       download: true 
     socialLinks:
       fontAwesomeIcons:
