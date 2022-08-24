@@ -74,7 +74,7 @@ output: hello world
 : hello world
 
 #+begin_src php
-//It is recomended not to be use as short tag can be disabled.
+//It is recomended not to be used as short tag can be disabled.
 <? ?>
 #+end_src
 

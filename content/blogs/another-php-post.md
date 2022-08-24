@@ -2,7 +2,7 @@
 title = "Basic syntax in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-13T22:07:00-03:00
-lastmod = 2022-08-24T00:58:50-03:00
+lastmod = 2022-08-24T01:02:12-03:00
 tags = ["php"]
 draft = false
 weight = 2001
@@ -56,7 +56,7 @@ output: hello world
 ```
 
 ```php
-//It is recomended not to be use as short tag can be disabled.
+//It is recomended not to be used as short tag can be disabled.
 <? ?>
 ```
 
