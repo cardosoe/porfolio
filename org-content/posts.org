@@ -1,0 +1,132 @@
+#+hugo_base_dir: ~/blog/portfolio/
+#+hugo_section: blogs
+#+hugo_weight: auto
+#+hugo_auto_set_lastmod: t
+#+draft: true
+#+author: Ezequiel Cardoso
+
+* PHP : @php:
+
+** DONE Basic syntax in PHP :php:
+CLOSED: [2022-07-13 mar 22:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: another-php-post
+:EXPORT_DATE: 2018-09-10
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php syntax
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+
+*** Basic PHP syntax
+
+Although PHP is a fairly simple and very flexible language, we must take into account
+It has some rules regarding its syntax and structure.
+
+When the interpreter parses a php file, always looks for opening and closing
+tags <?php and ?> allowing PHP to start and stop interpreting code between them.
+
+#+begin_src php
+<?php
+some php code...//parsed
+?>
+#+end_src
+
+There are three types of tags in PHP:
+
+#+begin_src php
+//NORMAL TAG
+// When the document has some PHP code embedded in html.
+<?php
+print("hello world")
+?>
+//output: hello world
+
+//If your document has only PHP code, don't use the closing tag.
+<?php
+$var = 1;
+print $var;
+
+//output: 1
+#+end_src
+
+#+RESULTS:
+: //NORMAL TAG
+: // When the document has some PHP code embedded in html.
+: hello world//output: hello world
+:
+: //If your document has only PHP code, don't use the closing tag.
+: 1
+
+#+begin_src php
+//THE SHORT ECHO TAG
+// if you want to print something
+<?="hello world" ?>
+output: hello world
+#+end_src
+
+#+RESULTS:
+: //THE SHORT ECHO TAG
+: //
+: hello world
+
+#+begin_src php
+//It is recomended not to be use as short tag can be disabled.
+<? ?>
+#+end_src
+
+
+****  Semicolon:
+
+All PHP commands needs to be close with a semicolon (;)
+
+#+begin_src php
+$x += 10;
+#+end_src
+
+The missing semicolon at the end of a command is probably the most common cause.
+frequent errors. When this happens, PHP treats multiple statements as
+only one not being able to interpret them correctly and throwing a message of
+parse error "Parse error".
+
+#+begin_src php
+$x += 10
+
+//Output: PHP Parse error: syntax error, unexpected end of file in Standard input code on line 3
+#+end_src
+
+#+RESULTS:
+PHP Parse error: syntax error, unexpected end of file in Standard input code on line 3
+
+**** The $ symbol
+
+In PHP you must write the $ sign in front of all variables. The interpreter
+PHP will recognize them regardless of whether they are numbers, arrays,
+arrays etc.
+
+#+begin_src php
+<?php
+$myNumber = 1;
+$myString = "One";
+$myArray = array('one', 'two', 'three');
+
+echo $myNumber . " " . $myString . " " . $myArray;
+
+//: Warning: Array to string conversion in Standard input code on line 6
+//: 1 One Array
+
+#+end_src
+
+#+RESULTS:
+:
+: Warning: Array to string conversion in Standard input code on line 6
+: 1 One Array
+
+* Footnotes
+* COMMENT Local Variables                                           :ARCHIVE:
+# Local Variables:
+# org-hugo-footer: "\n\n[//]: # \"Exported with love from a post written in Org mode\"\n[//]: # \"- https://github.com/kaushalmodi/ox-hugo\""
+# End:
