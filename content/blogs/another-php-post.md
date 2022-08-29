@@ -56,6 +56,7 @@ output: hello world
 ```
 
 ```php
+//THE SHORT TAG
 //It is recomended not to be used as short tag can be disabled.
 <? ?>
 ```
@@ -101,5 +102,5 @@ echo $myNumber . " " . $myString . " " . $myArray;
 //: 1 One Array
 ```
 
-[//]: # "Exported with love from a post written in Org mode"
-[//]: # "- https://github.com/kaushalmodi/ox-hugo"
+ # "Exported with love from a post written in Org mode"
+ # "- https://github.com/kaushalmodi/ox-hugo"
