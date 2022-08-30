@@ -97,14 +97,14 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ezequiel."
-    subtitle: "and i like to program in PHP"
+    subtitle: "And i like to program in PHP"
     content: "A year and a half ago I decided to start studying web development. I started out learning front-end development until php came my way."
     image: /images/toonme2.jpg
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1vsp6Xdde_CA3lMeFzp9FcEEP93M95Fff/view?usp=sharing" 
-      download: true 
+      url: "https://drive.google.com/file/d/1q4KFhtVpQvFRx46ct4SdGIlu4PpLgMnD/view?usp=sharing"
+      download: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github

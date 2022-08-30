@@ -2,7 +2,7 @@
 title = "Basic syntax in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-13T22:07:00-03:00
-lastmod = 2022-08-24T01:02:12-03:00
+lastmod = 2022-08-29T20:55:23-03:00
 tags = ["php"]
 draft = false
 weight = 2001
@@ -56,7 +56,6 @@ output: hello world
 ```
 
 ```php
-//THE SHORT TAG
 //It is recomended not to be used as short tag can be disabled.
 <? ?>
 ```
@@ -102,5 +101,5 @@ echo $myNumber . " " . $myString . " " . $myArray;
 //: 1 One Array
 ```
 
- # "Exported with love from a post written in Org mode"
- # "- https://github.com/kaushalmodi/ox-hugo"
+[//]: # "Exported with love from a post written in Org mode"
+[//]: # "- https://github.com/kaushalmodi/ox-hugo"

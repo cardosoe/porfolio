@@ -2,7 +2,6 @@
 #+hugo_section: blogs
 #+hugo_weight: auto
 #+hugo_auto_set_lastmod: t
-#+draft: true
 #+author: Ezequiel Cardoso
 
 * PHP : @php:
@@ -126,7 +125,7 @@ echo $myNumber . " " . $myString . " " . $myArray;
 : 1 One Array
 
 * Footnotes
-* COMMENT Local Variables                                           :ARCHIVE:
-# Local Variables:
-# org-hugo-footer: "\n\n[//]: # \"Exported with love from a post written in Org mode\"\n[//]: # \"- https://github.com/kaushalmodi/ox-hugo\""
-# End:
+* COMMENT Local Variables :ARCHIVE:
+ Local Variables:
+ org-hugo-footer: "\n\n[//]: # \"Exported with love from a post written in Org mode\"\n[//]: # \"- https://github.com/kaushalmodi/ox-hugo\""
+ End:
