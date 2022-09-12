@@ -1,11 +1,12 @@
 +++
 title = "Variables in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-04T21:15:00-03:00
-lastmod = 2022-08-31T19:25:30-03:00
+date = 2022-07-02
+publishDate = 2022-07-06T00:00:00-03:00
+lastmod = 2022-09-11T23:04:02-03:00
 tags = ["php"]
-draft = true
-weight = 2004
+draft = false
+weight = 2003
 foo = "bar"
 baz = "zoo"
 alpha = 1

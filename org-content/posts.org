@@ -125,7 +125,7 @@ echo $myNumber . " " . $myString . " " . $myArray;
 : 1 One Array
 
 ** DONE Debugging in PHP :php:
-CLOSED: [2022-09-11 dom 22:50]
+SCHEDULED: <2022-07-04 lun>
 :PROPERTIES:
 :EXPORT_FILE_NAME: debugging-in-php
 :EXPORT_DATE: 2022-07-01
@@ -258,8 +258,8 @@ print_r ($people);
 print_r is also good for inspection but it doesn't give me as much information
 as var_dump.
 
-** TODO Variables in PHP :php:
-CLOSED: [2022-07-04 mar 21:15]
+** DONE Variables in PHP :php:
+SCHEDULED: <2022-07-06 mié>
 :PROPERTIES:
 :EXPORT_FILE_NAME: variables-in-php
 :EXPORT_DATE: 2022-07-02
@@ -361,8 +361,8 @@ echo $team[1];
 The reason the result shows Ana and not José is because the first
 element of an array is position 0 (zero), not 1.
 
-** TODO Constants in PHP :php:
-CLOSED: [2022-07-06 mar 18:37]
+** DONE Constants in PHP :php:
+SCHEDULED: <2022-07-08 vie>
 :PROPERTIES:
 :EXPORT_FILE_NAME: constants-in-php
 :EXPORT_DATE: 2022-07-03
@@ -412,8 +412,8 @@ echo PI_NUMBER;
 : Warning: Constant PI_NUMBER already defined in Standard input code on line 5
 : 3.14
 
-** TODO Data type in PHP :php:
-CLOSED: [2022-07-07 mar 22:34]
+** DONE Data type in PHP :php:
+SCHEDULED: <2022-07-12 mar>
 :PROPERTIES:
 :EXPORT_FILE_NAME: datatype-in-php
 :EXPORT_DATE: 2022-07-02
@@ -495,8 +495,8 @@ echo $how many_potatoes_are there;
 : Warning: A non-numeric value encountered in Standard input code on line 5
 : fifteen
 
-** TODO Logical Operators in PHP :php:
-CLOSED: [2022-07-08 mar 19:16]
+** DONE Logical Operators in PHP :php:
+SCHEDULED: <2022-07-15 vie>
 :PROPERTIES:
 :EXPORT_FILE_NAME: logical-operators-in-php
 :EXPORT_DATE: 2022-07-02
@@ -632,8 +632,8 @@ var_dump(!$he_likes_to_eat || $he_is_a_big_michi); // True
 : bool(false)
 : bool(true)
 
-** TODO Relational Operators in PHP :php:
-CLOSED: [2022-07-09 mar 15:50]
+** DONE Relational Operators in PHP :php:
+SCHEDULED: <2022-07-19 mar>
 :PROPERTIES:
 :EXPORT_FILE_NAME: relational-operators-in-php
 :EXPORT_DATE: 2022-07-02
@@ -860,8 +860,8 @@ var_dump( $d ?? $b );
 :int(9)
 :int(2)
 
-** TODO Other Operators in PHP :php:
-CLOSED: [2022-07-10 mar 10:10]
+** DONE Other Operators in PHP :php:
+SCHEDULED: <2022-07-21 jue>
 :PROPERTIES:
 :EXPORT_FILE_NAME: operators-in-php
 :EXPORT_DATE: 2022-07-02
@@ -922,8 +922,8 @@ echo $name;
 #+RESULTS:
 : Pepe Goteras
 
-** TODO Arrays in PHP :php:
-CLOSED: [2022-07-10 mar 14:33]
+** DONE Arrays in PHP :php:
+SCHEDULED: <2022-07-23 sáb>
 :PROPERTIES:
 :EXPORT_FILE_NAME: arrays-in-php
 :EXPORT_DATE: 2022-07-02

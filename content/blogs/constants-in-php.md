@@ -1,11 +1,12 @@
 +++
 title = "Constants in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-06T18:37:00-03:00
-lastmod = 2022-08-31T19:25:30-03:00
+date = 2022-07-03
+publishDate = 2022-07-08T00:00:00-03:00
+lastmod = 2022-09-11T23:04:02-03:00
 tags = ["php"]
-draft = true
-weight = 2006
+draft = false
+weight = 2004
 foo = "bar"
 baz = "zoo"
 alpha = 1

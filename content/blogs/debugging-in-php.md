@@ -1,10 +1,11 @@
 +++
 title = "Debugging in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-03T20:00:00-03:00
-lastmod = 2022-08-31T19:25:29-03:00
+date = 2022-07-01
+publishDate = 2022-07-04T00:00:00-03:00
+lastmod = 2022-09-11T23:04:02-03:00
 tags = ["php"]
-draft = true
+draft = false
 weight = 2002
 foo = "bar"
 baz = "zoo"

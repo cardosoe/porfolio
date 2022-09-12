@@ -1,11 +1,12 @@
 +++
 title = "Other Operators in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-10T10:10:00-03:00
-lastmod = 2022-08-31T19:25:32-03:00
+date = 2022-07-02
+publishDate = 2022-07-21T00:00:00-03:00
+lastmod = 2022-09-11T23:04:03-03:00
 tags = ["php"]
-draft = true
-weight = 2013
+draft = false
+weight = 2008
 foo = "bar"
 baz = "zoo"
 alpha = 1

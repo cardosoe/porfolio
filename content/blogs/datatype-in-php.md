@@ -1,11 +1,12 @@
 +++
 title = "Data type in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-07T22:34:00-03:00
-lastmod = 2022-08-31T19:25:31-03:00
+date = 2022-07-02
+publishDate = 2022-07-12T00:00:00-03:00
+lastmod = 2022-09-11T23:04:02-03:00
 tags = ["php"]
-draft = true
-weight = 2008
+draft = false
+weight = 2005
 foo = "bar"
 baz = "zoo"
 alpha = 1

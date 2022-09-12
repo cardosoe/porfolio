@@ -1,11 +1,12 @@
 +++
 title = "Logical Operators in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-08T19:16:00-03:00
-lastmod = 2022-08-31T19:25:31-03:00
+date = 2022-07-02
+publishDate = 2022-07-15T00:00:00-03:00
+lastmod = 2022-09-11T23:04:03-03:00
 tags = ["php"]
-draft = true
-weight = 2010
+draft = false
+weight = 2006
 foo = "bar"
 baz = "zoo"
 alpha = 1
