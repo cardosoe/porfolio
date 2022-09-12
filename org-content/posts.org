@@ -124,8 +124,8 @@ echo $myNumber . " " . $myString . " " . $myArray;
 : Warning: Array to string conversion in Standard input code on line 6
 : 1 One Array
 
-** TODO Debugging in PHP :php:
-CLOSED: [2022-07-03 mar 20:00]
+** DONE Debugging in PHP :php:
+CLOSED: [2022-09-11 dom 22:50]
 :PROPERTIES:
 :EXPORT_FILE_NAME: debugging-in-php
 :EXPORT_DATE: 2022-07-01
