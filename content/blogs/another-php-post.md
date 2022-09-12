@@ -1,8 +1,8 @@
 +++
 title = "Basic syntax in PHP"
 author = ["Ezequiel Cardoso"]
-date = 2022-07-13T22:07:00-03:00
-lastmod = 2022-08-29T20:55:23-03:00
+date = 2022-07-02T22:07:00-03:00
+lastmod = 2022-08-31T19:25:29-03:00
 tags = ["php"]
 draft = false
 weight = 2001

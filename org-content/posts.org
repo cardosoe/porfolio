@@ -7,7 +7,7 @@
 * PHP : @php:
 
 ** DONE Basic syntax in PHP :php:
-CLOSED: [2022-07-13 mar 22:07]
+CLOSED: [2022-07-02 mar 22:07]
 :PROPERTIES:
 :EXPORT_FILE_NAME: another-php-post
 :EXPORT_DATE: 2018-09-10
@@ -123,6 +123,1031 @@ echo $myNumber . " " . $myString . " " . $myArray;
 :
 : Warning: Array to string conversion in Standard input code on line 6
 : 1 One Array
+
+** TODO Debugging in PHP :php:
+CLOSED: [2022-07-03 mar 20:00]
+:PROPERTIES:
+:EXPORT_FILE_NAME: debugging-in-php
+:EXPORT_DATE: 2022-07-01
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php debug
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** DEBUGGING
+
+Definition: Debugging is the process of detecting and removing of existing and
+potential errors (also called as ‘bugs’) in a software code that can cause it to
+behave unexpectedly or crash. To prevent incorrect operation of a software or
+system, debugging is used to find and resolve bugs or defects. When various
+subsystems or modules are tightly coupled, debugging becomes harder as any
+change in one module may cause more bugs to appear in another. Sometimes it
+takes more time to debug a program than to code it.Definition: Debugging is the
+process of detecting and removing of existing and potential errors (also called
+as ‘bugs’) in a software code that can cause it to behave unexpectedly or crash.
+To prevent incorrect operation of a software or system, debugging is used to
+find and resolve bugs or defects. When various subsystems or modules are tightly
+coupled, debugging becomes harder as any change in one module may cause more
+bugs to appear in another. Sometimes it takes more time to debug a program than
+to code it.
+
+*** To debug php offers us two methods:
+
+1) var_dump($...);
+
+#+begin_src php
+$people = [
+"Charles" => 22,
+"Mr. Michi" => 15,
+"John" => 65
+];
+
+var_dump($people);
+
+ #+RESULTS:
+: array(3) {
+: ["Charles"]=>
+:int(22)
+: ["Mr.Michi"]=>
+:int(15)
+: ["John"]=>
+:int(65)
+: }
+
+#+end_src
+
+
+var_dump allows me to inspect the entire content of my variable
+
+2) print_r($...)
+
+#+begin_src php
+$people = [
+"Charles" => 22,
+"Mr. Michi" => 15,
+"John" => 65
+];
+
+print_r ($people);
+
+
+#+RESULTS:
+: array
+: (
+: [Charles] => 22
+: [Mr. Michi] => 15
+: [John] => 65
+: )
+#+end_src
+
+
+print_r is also good for inspection but it doesn't give me as much information as var_dump.
+ * To do debugging php offers us two methods:
+
+1) var_dump($...);
+
+#+begin_src php
+$people = [
+"Charles" => 22,
+"Mr. Michi" => 15,
+"John" => 65
+];
+
+var_dump($people);
+
+#+RESULTS:
+: array(3) {
+: ["Charles"]=>
+:int(22)
+: ["Mr.Michi"]=>
+:int(15)
+: ["John"]=>
+:int(65)
+: }
+
+#+end_src
+
+
+var_dump allows me to inspect the entire content of my variable
+
+2) print_r($...)
+
+#+begin_src php
+$people = [
+"Charles" => 22,
+"Mr. Michi" => 15,
+"John" => 65
+];
+
+print_r ($people);
+
+#+RESULTS:
+: array
+: (
+: [Charles] => 22
+: [Mr. Michi] => 15
+: [John] => 65
+: )
+
+#+end_src
+
+
+print_r is also good for inspection but it doesn't give me as much information
+as var_dump.
+
+** TODO Variables in PHP :php:
+CLOSED: [2022-07-04 mar 21:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: variables-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php variables
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** Variables in PHP
+
+**** What is a variable?
+
+A variable is something that can hold anything inside it and can modify,
+replace or remove the item you are saving at any time.
+
+We can imagine a variable as a CONTAINER that can hold any VALUE!
+
+***** Rules for naming variables
+
+When creating our variables in PHP we must follow the following
+four rules;
+
+ 1) Variable names, after the $ sign, must start with a
+    letter of the alphabet or the character _ (underscore).
+ 2) Variable names can only contain the characters [a-z, A-Z,
+    0-9 and _ ].
+ 3) Variable names cannot contain spaces. If the name has
+    more than one word the character _ (underscore) must be used, eg.
+    ($first_name).
+ 4) Variable names are case sensitive.
+
+
+***** Structure of the variables
+
+Variables in PHP always! start with a $ sign and in the example that we
+occupies the quotes tells the interpreter that it is a string of
+characters (string). Once the content/value is assigned to the variable $name,
+If we want to see what the assigned content/value was, we can do it through
+from the command echo $...;
+
+#+begin_src php
+$name = "Charlie";
+
+echo $name;
+#+end_src
+
+#+RESULTS:
+: Charlie
+
+We could also assign the content of $name to another variable, eg $user_name
+
+#+begin_src php
+<?php //test.php
+$name = "Charlie";
+echo $name . " ";
+$user_name = $name;
+echo $user_name;
+?>
+#+end_src
+
+#+RESULTS:
+: Carlitos Carlitos
+
+***** Numeric variables:
+
+Variables in PHP can also contain whole numbers (integers) and
+floating point (float).
+#+begin_src php
+$account_1 = 17;
+$account_2 = 17.5;
+
+echo $account_1 . " " . $account_2;
+#+end_src
+
+#+RESULTS:
+: 17 17.5
+
+***** Matrices (Arrays)
+
+We can think of arrays as a series of values ​​that share a
+set. For example: a basketball team of five people share the
+variable (set) equipment.
+
+The structure of an array is composed of the constructor array('...','...'); who
+inside it contains strings, each of them separated by commas.
+
+#+begin_src php
+$team = array('Jose', 'Ana', 'Lorena', 'Pepe', 'Carla');
+//If we wanted to know the name of player number 1 we should:
+echo $team[1];
+#+end_src
+
+#+RESULTS:
+: Ana
+
+The reason the result shows Ana and not José is because the first
+element of an array is position 0 (zero), not 1.
+
+** TODO Constants in PHP :php:
+CLOSED: [2022-07-06 mar 18:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: constants-in-php
+:EXPORT_DATE: 2022-07-03
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php constants
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+***   CONSTANTS IN PHP
+**** What is a constant
+
+A constant is an indicator for a single value. Unlike variables, constants cannot change a value once it has been assigned.
+By default, a constant is case sensitive. By convention,
+IDENTIFIERS OF CONSTANTS ARE ALWAYS DECLARED IN UPPERCASE.
+
+A constant will always keep its value intact from the moment it is declared.
+
+**** Constants are always declared in uppercase.
+
+For example, if we declare the constant "PI_NUMBER", the result will be the assigned value.
+
+#+begin_src php
+
+define("PI_NUMBER", 3.14);
+
+echo PI_NUMBER;
+
+#+end_src
+
+#+RESULTS:
+: 3.14
+
+But if we try to declare the same constant again, the interpreter will throw the following error along with the originally assigned value.
+#+begin_src php
+
+define("PI_NUMBER", 3.14);
+define("PI_NUMBER", 14);
+echo PI_NUMBER;
+
+#+end_src
+
+#+RESULTS:
+:
+: Warning: Constant PI_NUMBER already defined in Standard input code on line 5
+: 3.14
+
+** TODO Data type in PHP :php:
+CLOSED: [2022-07-07 mar 22:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: datatype-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php datatype
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** Data Types in PHP
+
+A data type is simply a way of differentiating data by across
+its type for example: letters, numbers, words, etc...
+
+PHP being a weakly typed language does not need you to explicitly define
+a data type since by itself it can deduce what type you are using.
+
+**** Numeric:
+
+***** Integer (integers)
+***** Float (decimal)
+***** Double (more precise decimal, with more number of decimals).
+
+**** Character string:
+
+***** Char (character)
+***** String (character string)
+
+****  Worthless:
+
+***** Null (no value inside)
+***** Undefined (there is a variable defined but without a determined value)
+
+***** If the interpreter finds two different variables, it will automatically interpret which data type it should work with.
+
+#+begin_src php
+
+<?php
+
+    $number = "23";
+    $new_number = $number + 2;
+
+    var_dump($little number);
+    var_dump($new_number);
+    echo "\n";
+
+#+end_src
+
+#+RESULTS:
+:
+: string(2) "23"
+:int(25)
+:
+
+#+begin_src php
+
+$number = 10;
+$number = $number + 0.5;
+var_dump($little number);
+
+#+end_src
+
+#+RESULTS:
+: float(10.5)
+
+#+begin_src php
+
+$potatoes = "10 potatoes in the sack";
+$how many_potatoes_are there = $potatoes + 5;
+
+echo $how many_potatoes_are there;
+
+#+end_src
+
+#+RESULTS:
+:
+: Warning: A non-numeric value encountered in Standard input code on line 5
+: fifteen
+
+** TODO Logical Operators in PHP :php:
+CLOSED: [2022-07-08 mar 19:16]
+:PROPERTIES:
+:EXPORT_FILE_NAME: logical-operators-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php logical operators
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+***   LOGICAL OPERATORS IN PHP
+Logical operators help us combine two or more statements in order
+determine if a sentence is true or false. In most cases it
+they need at least two statements and an operator.
+
+To determine the truth of an expression we will use the so-called
+"TRUTH TABLES".
+
+Truth tables in logic are a tool represented in graphics
+of rows and columns showing all possible scenarios and conditions
+for a statement to be true or false.
+
+**** TYPES OF OPERATOR
+
+***** AND
+
+It is used to check if two statements are true.
+If both are true, then the entire sentence is true.
+If one of them is false, then the entire sentence is false.
+In PHP we can use them as follows:
+
+****** $value_1 and $value_2
+****** $value_1 && $value_2
+
+****** TRUTH TABLES
+
+    | Value 1 | Operator | Value 2 | Result |
+    |---------+----------+---------+--------|
+    | True    | AND      | True    | True   |
+    | True    | AND      | False   | False  |
+    | False   | AND      | True    | False  |
+    | False   | AND      | False   | False  |
+
+***** OR
+
+It is used to check if at least one of the statements is true.
+If one is true, the sentence is true. If it is not, the sentence is false.
+In PHP we can use them as follows:
+
+****** $value_1 or $value_2
+****** $value_1 || $value_2
+
+****** TRUTH TABLES
+
+    | Value 1 | Operator | Value 2 | Result |
+    |---------+----------+---------+--------|
+    | True    | OR       | True    | True   |
+    | True    | OR       | False   | True   |
+    | False   | OR       | True    | True   |
+    | False   | OR       | False   | False  |
+
+***** NOT
+
+It is used to invert the value of an assertion.
+In PHP we can use them as follows:
+
+****** !$value
+
+****** TRUTH TABLES
+
+
+| Operator | Value | Result |
+|----------+-------+--------|
+| NOT      | True  | False  |
+| NOT      | False | True   |
+
+*****   EXERCISE
+
+#+begin_src php
+
+// define the variables
+$michis_felines = true;
+$michis_4_patas = true;
+$michis_fly = false;
+$michis_programan_con_PHP = false;
+
+// Now we are going to do the operations with AND
+
+var_dump($michis_felines && $michis_4_patas);
+
+// with OR
+var_dump($michis_fly || $michis_4_patas);
+
+// NOT
+
+var_dump( !$michis_4_legs );
+
+// Exercise
+
+$result = $michis_4_patas and $michis_programan_con_PHP;
+
+var_dump( $result );
+
+#+end_src
+
+#+RESULTS:
+: bool(true)
+: bool(true)
+: bool(false)
+: bool(true)
+
+#+begin_src php
+
+$is_a_big_michi = true;
+$he_likes_to_eat = true;
+$knows_fly = false;
+$has_2_legs = false;
+
+var_dump($he_is_a_big_michi && $he_likes_to_eat); // True
+var_dump($is_a_big_michi || $knows_fly); // True
+var_dump($can_fly || $has_2_legs); //False
+var_dump(!$he_likes_to_eat); //False
+var_dump(!$he_likes_to_eat || $he_is_a_big_michi); // True
+
+
+#+end_src
+
+#+RESULTS:
+: bool(true)
+: bool(true)
+: bool(false)
+: bool(false)
+: bool(true)
+
+** TODO Relational Operators in PHP :php:
+CLOSED: [2022-07-09 mar 15:50]
+:PROPERTIES:
+:EXPORT_FILE_NAME: relational-operators-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php relational operators
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** RELATIONAL OPERATORS
+
+These operators help us compare two values.
+
+**** OPERATOR == EQUAL
+    DOES NOT COMPARE TYPES OF DATA
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a == $b ); //We ask PHP if $a is equal == to $b
+
+#+end_src
+
+#+RESULTS:
+: bool(true)
+
+**** OPERATOR ==== IDENTICAL
+    IF YOU COMPARE TYPES OF DATA
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a === $b ); //We ask PHP if $a is identical == to $b
+var_dump( $a === $b2 ); //We ask PHP if $a is identical == to $b2
+
+#+end_src
+
+#+RESULTS:
+: bool(true)
+: bool(false)
+
+**** OPERATOR != (!=) DIFFERENT
+    DOES NOT COMPARE TYPES OF DATA
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a != $b ); //Ask PHP if $a is different == to $b
+var_dump( $a != $b2 ); //Ask PHP if $a is different == to $b2
+
+#+end_src
+
+#+RESULTS:
+: bool(false)
+: bool(false)
+
+**** OPERATOR !== (! ==) DIFFERENT
+    IF YOU COMPARE TYPES OF DATA
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a !== $b ); //Ask PHP if $a is different == to $b
+var_dump( $a !== $b2 ); //Ask PHP if $a is different == to $b2
+
+#+end_src
+
+#+RESULTS:
+: bool(false)
+: bool(true)
+
+**** OPERATOR < LESS THAN
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a < $b );
+var_dump( $c < $b );
+var_dump( $d < $b );
+
+#+end_src
+
+#+RESULTS:
+: bool(false)
+: bool(false)
+: bool(true)
+
+**** OPERATOR > GREATER THAN
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a > $b );
+var_dump( $c > $b );
+var_dump( $d > $b );
+
+#+end_src
+
+#+RESULTS:
+: bool(false)
+: bool(true)
+: bool(false)
+
+**** OPERATOR >= GREATER OR EQUAL TO
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a >= $b );
+var_dump( $c >= $b );
+var_dump( $d >= $b );
+
+#+end_src
+
+**** OPERATOR <= LESS OR EQUAL TO
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a <= $b );
+var_dump( $c <= $b );
+var_dump( $d <= $b );
+
+
+#+end_src
+
+#+RESULTS:
+: bool(true)
+: bool(false)
+: bool(true)
+
+**** OPERATOR <=> (< = >) SPACESHIP
+
+The operator:
+1) It will return 0 if the numbers are equal.
+2) It will return 1 if the number on the left is greater than the one on
+  It's on the right.
+3) It will return -1 if the number on the left is less than
+the one on the right.
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a <=> $b );
+var_dump( $c <=> $b );
+var_dump( $d <=> $b );
+
+#+end_src
+
+#+RESULTS:
+:int(0)
+:int(1)
+:int(-1)
+:int(-1)
+
+
+**** OPERATOR ?? NULL MERGE
+
+This operator tells us what is the first variable that is defined.
+
+#+begin_src php
+
+$a = 5;
+$b = 5;
+$b2 = "5";
+$c = 9;
+$d = 2;
+
+var_dump( $a ?? $b );
+var_dump( $c ?? $b );
+var_dump( $d ?? $b );
+
+#+end_src
+
+#+RESULTS:
+:int(5)
+:int(9)
+:int(2)
+
+** TODO Other Operators in PHP :php:
+CLOSED: [2022-07-10 mar 10:10]
+:PROPERTIES:
+:EXPORT_FILE_NAME: operators-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php operators
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** OTHER OPERATORS IN PHP
+
+**** ASSIGNMENT OPERATOR
+
+This operator resembles the variable that is to the left of the sign
+equals ( = ) to anything to the right of the equals sign ( = ).
+
+#+begin_src php
+
+$age_of_jaimito = ($age_of_pepito = 18) + 5;
+
+echo "Jumpy's age is $Jumpy's_age" . " Y " . "Jaimito's age is $jaimito_age.";
+#+end_src
+
+#+RESULTS:
+: Pepito's age is 18 and Jaimito's age is 23.
+
+**** INCREMENT OPERATOR ++
+
+This operator increments the value of the initialized variable to the right of the = sign.
+
+#+begin_src php
+
+$counter = 2;
+$counter ++;
+
+echo $counter;
+
+#+end_src
+
+#+RESULTS:
+: 3
+
+**** CONCATENATION OPERATOR
+
+This operator concatenates the value of the initialized variable together with what is declared to the right of the = sign.
+
+#+begin_src php
+
+$name = "Pepe";
+$name .= " " . "leaks"; // Very important the . (dot) to concatenate the name before the = sign
+
+echo $name;
+
+#+end_src
+
+#+RESULTS:
+: Pepe Goteras
+
+** TODO Arrays in PHP :php:
+CLOSED: [2022-07-10 mar 14:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: arrays-in-php
+:EXPORT_DATE: 2022-07-02
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :foo bar :baz zoo :alpha 1 :beta "two words" :gamma 10
+:END:
+#+attr_html: :alt php arrays
+#+attr_html: :width fill
+#+attr_html: :class center
+#+OPTIONS: toc:nil
+[[/images/Basic_PHP_Syntax.png]]
+
+*** ARRANGEMENTS IN PHP (ARRAYS)
+
+An array is a variable that can hold multiple values at once.
+
+Let's look at two ways to declare an array:
+
+Declaring values inside square brackets [ ]
+
+#+begin_src php
+
+$ages = [20, 18, 40];
+
+echo "One of the ages is " . $ages[1] . " " . "years";
+
+#+end_src
+
+#+RESULTS:
+: One of the ages is 18 years old
+
+Declaring the values inside the array() function
+
+#+begin_src php
+
+$ages = array(20,18,40);
+
+echo "One of the ages is " . $ages[1] . " " . "years";
+
+#+end_src
+
+#+RESULTS:
+: One of the ages is 18 years old
+
+**** ASSOCIATIVE ARRANGEMENTS
+
+A variable can hold multiple values ​​that we can access them by
+through a word. They are the equivalent of JSON in JavaScript and are very useful
+to create lists.
+
+#+begin_src php
+
+$ages = array(
+   "Charles" => 20,
+   "Mr. Michi" => 18,
+   "John" => 40, //trailing comma. It is optional and PHP will not throw an error.
+    );
+
+echo "Mr. Michi's age is " . $ages["Mr. Michi"];
+
+#+end_src
+
+#+RESULTS:
+: Mr. Michi's age is 18
+
+#+begin_src php
+
+$coffees = array(
+   "Cappuccino" => 50,
+   "Latte" => 49,
+   "American" => 70
+echo "The price of American coffee is {$cafes['Americano']}";
+#+end_src
+
+#+RESULTS:
+: The price of American coffee is 70
+
+
+**** NESTED ARRANGEMENTS
+
+#+begin_src php
+
+$people = array(
+    "Charles" => array(
+        "age"=> 20,
+        "surname" => "Santana",
+        )
+    );
+
+echo "Carlos' information is: Age: " . $people["Charles"]["age"]. ", " . "Surname: " . $people["Carlos"]["surname"];
+#+end_src
+
+#+RESULTS:
+: Carlos' information is: Age: 20, Last Name: Santana
+
+*** ARRAY MANIPULATION
+# OR HANDLING??
+
+PHP has tons of functions for manipulating arrays (see documentation for
+PHP) [[www.php.net/manual/en/ref.array.php][PHP documentation for array manipulation]]
+
+#+begin_src php
+
+    $ages = [18, 22,40, 34];
+
+    //count
+    echo count($ages);
+    //output = 4
+#+end_src
+
+#+RESULTS:
+: 4
+
+#+begin_src php
+//array_push
+    $ages = [18, 22,40, 34];
+    array_push($ages, 13);
+
+    var_dump($ages);
+#+end_src
+
+#+RESULTS:
+#+begin_example
+array(5) {
+  [0]=>
+  int(18)
+  [1]=>
+  int(22)
+  [2]=>
+  int(40)
+  [3]=>
+  int(34)
+  [4]=>
+  int(13)
+}
+#+end_example
+
+
+#+begin_src php
+//is_array
+    $ages = [18, 22,40, 34];
+    $this_is_not_an_array = "";
+    var_dump( is_array($this_is_not_an_array)); //bool(false)
+    var_dump( is_array($ages)); //bool(true)
+#+end_src
+
+#+RESULTS:
+: bool(false)
+: bool(true)
+
+
+#+begin_src php
+//Explore
+    $list_of_fruits = "strawberry, cherry, apple";
+    $list_of_fruits_array = explode(",", $list_of_fruits);
+    var_dump($list_of_fruits_array);
+#+end_src
+
+#+RESULTS:
+: array(3) {
+: [0]=>
+: string(5) "strawberry"
+: [1]=>
+: string(7) "cherry"
+: [2]=>
+: string(8) " apple"
+: }
+
+#+begin_src php
+// Implode is used to join through a concatenator, in this case the comma.
+    $list_of_fruits_array = ["strawberry", "cherry", "apple"];
+    $list_of_fruits = implode(",", $list_of_fruits_array);
+    var_dump($list_of_fruits);
+#+end_src
+
+#+RESULTS:
+: string(20) "strawberry,cherry,apple"
+
+#+begin_src php
+
+$michis = array(
+    array(
+        "name"=> "toto",
+        "occupation" => "scratcher",
+        "color" => "brown",
+        "food" => array(
+        "favourite" => "mackerel",
+        "hated" => "cat")
+        ),
+    array(
+        "name"=> "tat",
+        "occupation" => "scratcher",
+        "color" => "blue",
+        "food" => array(
+        "favourite" => "sardine",
+        "hated" => "cat")
+        ),
+    array(
+        "name"=> "uncle",
+        "occupation" => "scratcher",
+        "color" => "brown",
+        "food" => array(
+        "favourite" => "fish",
+        "hated" => "cat")
+        ),
+    );
+
+//var_dump($michis);
+ // echo "michi_1's name is" . " " . $michis["michi_1"]["name"] . "," . " " . "his occupation is" . " " . $michis["michi_1"]["occupation"] . "," . " " . "its color is" . " " . $michis["michi_1"]["color"]. "," . " " . "Her favorite food is" . " " . $michis["michi_1"]["food"]["favorite"]. "," . " " . "and his hated food is". " " . $michis["michi_1"]["food"]["hated"]. ".";
+
+
+    // we can access the properties of an array by declaring a variable with the subscript we want to access, followed by the values ​​we want to know
+   $tito = $michis[2];
+   echo "Tito's favorite food is " . $tito['food']['favorite'];
+   echo "\n"; // line break
+    // or we can access it directly by declaring the desired subscript followed by the values ​​we want to access.
+   echo "Tato's favorite food is " . $michis[1]['food']['favorite'] . "and his favorite color is". $michis[1]['color'];
+#+end_src
+
+#+RESULTS:
+: Tito's favorite food is fish
+: Tato's favorite food is sardine and his favorite color is blue
+
+
+
 
 * Footnotes
 * COMMENT Local Variables :ARCHIVE:
