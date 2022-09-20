@@ -302,7 +302,7 @@ params:
 
       - title: Pokemon Hangman game
         content: Basic Hangman game written in PHP to be run in the terminal.
-        image: /images/projects/Hangman_game.jpg
+        image: https://commons.wikimedia.org/wiki/File:Hangman_game.jpg
         featured:
           name: Demo
           link:
