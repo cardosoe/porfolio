@@ -299,6 +299,18 @@ params:
           - icon: fab fa-github
             url: https://github.com/frontendcafe/cmyk-morning
 
+
+      - title: Pokemon Hangman game
+        content: Basic Hangman game written in PHP to be run in the terminal.
+        image: /images/projects/Hangman_game.jpg
+        featured:
+          name: Demo
+          link:
+        badges:
+          - "PHP"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/cardosoe/php_hangman
   #Contact
   contact:
     enable: true
