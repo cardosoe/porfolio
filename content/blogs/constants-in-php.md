@@ -2,7 +2,7 @@
 title = "Constants in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-08T00:00:00-03:00
-lastmod = 2022-10-14T19:48:10-03:00
+lastmod = 2022-10-14T19:57:46-03:00
 tags = ["php"]
 draft = false
 weight = 2006
@@ -12,9 +12,6 @@ alpha = 1
 beta = "two words"
 gamma = 10
 +++
-
-{{< figure src="/images/Basic_PHP_Syntax.png" >}}
-
 
 ## CONSTANTS IN PHP {#constants-in-php}
 

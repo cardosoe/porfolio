@@ -3,7 +3,7 @@ title = "Variables in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-10-14T19:40:00-03:00
 publishDate = 2022-07-06T00:00:00-03:00
-lastmod = 2022-10-14T19:48:10-03:00
+lastmod = 2022-10-14T19:57:46-03:00
 tags = ["php"]
 draft = false
 weight = 2007
@@ -13,9 +13,6 @@ alpha = 1
 beta = "two words"
 gamma = 10
 +++
-
-{{< figure src="/images/Basic_PHP_Syntax.png" >}}
-
 
 ## Variables in PHP {#variables-in-php}
 

@@ -17,7 +17,7 @@ CLOSED: <2022-07-23 sáb>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** ARRANGEMENTS IN PHP (ARRAYS)
 
@@ -230,7 +230,6 @@ $michis = array(
 : Tito's favorite food is fish
 : Tato's favorite food is sardine and his favorite color is blue
 
-
 ** DONE Other Operators in PHP :php:
 CLOSED: <2022-07-21 jue>
 :PROPERTIES:
@@ -242,7 +241,7 @@ CLOSED: <2022-07-21 jue>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** OTHER OPERATORS IN PHP
 
@@ -304,7 +303,7 @@ CLOSED: <2022-07-19 mar>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** RELATIONAL OPERATORS
 
@@ -532,7 +531,7 @@ CLOSED: <2022-07-15 vie>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 ***   LOGICAL OPERATORS IN PHP
 Logical operators help us combine two or more statements in order
@@ -669,7 +668,7 @@ CLOSED: <2022-07-12 mar>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** Data Types in PHP
 
@@ -752,7 +751,7 @@ CLOSED: <2022-07-08 vie>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 ***   CONSTANTS IN PHP
 **** What is a constant
@@ -803,7 +802,7 @@ CLOSED: [2022-10-14 vie 19:40] SCHEDULED: <2022-07-06 mié>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** Variables in PHP
 
@@ -906,7 +905,7 @@ CLOSED: <2022-07-04 lun>
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 *** DEBUGGING
 
@@ -1040,7 +1039,7 @@ CLOSED: [2022-07-02 mar 22:07]
 #+attr_html: :width fill
 #+attr_html: :class center
 #+OPTIONS: toc:nil
-[[/images/Basic_PHP_Syntax.png]]
+# [[/images/Basic_PHP_Syntax.png]]
 
 
 *** Basic PHP syntax

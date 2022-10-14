@@ -2,7 +2,7 @@
 title = "Basic syntax in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-02T22:07:00-03:00
-lastmod = 2022-10-14T19:48:11-03:00
+lastmod = 2022-10-14T19:57:47-03:00
 tags = ["php"]
 draft = false
 weight = 2009
@@ -12,9 +12,6 @@ alpha = 1
 beta = "two words"
 gamma = 10
 +++
-
-{{< figure src="/images/Basic_PHP_Syntax.png" >}}
-
 
 ## Basic PHP syntax {#basic-php-syntax}
 

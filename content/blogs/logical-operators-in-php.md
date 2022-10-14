@@ -2,7 +2,7 @@
 title = "Logical Operators in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-15T00:00:00-03:00
-lastmod = 2022-10-14T19:48:09-03:00
+lastmod = 2022-10-14T19:57:45-03:00
 tags = ["php"]
 draft = false
 weight = 2004
@@ -12,9 +12,6 @@ alpha = 1
 beta = "two words"
 gamma = 10
 +++
-
-{{< figure src="/images/Basic_PHP_Syntax.png" >}}
-
 
 ## LOGICAL OPERATORS IN PHP {#logical-operators-in-php}
 
