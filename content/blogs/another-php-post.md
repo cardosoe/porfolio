@@ -2,10 +2,10 @@
 title = "Basic syntax in PHP"
 author = ["Ezequiel Cardoso"]
 date = 2022-07-02T22:07:00-03:00
-lastmod = 2022-09-11T23:10:03-03:00
+lastmod = 2022-10-14T19:48:11-03:00
 tags = ["php"]
 draft = false
-weight = 2001
+weight = 2009
 foo = "bar"
 baz = "zoo"
 alpha = 1

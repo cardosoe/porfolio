@@ -99,7 +99,7 @@ params:
     title: "Ezequiel."
     subtitle: "And i like to program in PHP"
     content: "A year and a half ago I decided to start studying web development. I started out learning front-end development until php came my way."
-    image: /images/toonme2.jpg
+    # image: /images/toonme2.jpg
     button:
       enable: true
       name: "Resume"
@@ -123,7 +123,7 @@ params:
   about:
     enable: true
     title: "About me"
-    image: "/images/cartoon.jpg"
+    # image: /images/toonme2.jpg
     content: |-
       I am a software developer with a passion for web development and tech in general. I have a strong interest in technology and commerce topics related. I am looking actively for working opportunities. 
 
